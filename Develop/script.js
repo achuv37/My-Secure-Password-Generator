@@ -35,7 +35,56 @@ function generatePassword() {
     var confirmLowercase = window.confirm("Will this contain Lowercase letters?");
     var confirmUppercase = window.confirm("Will this contain Uppercase letters?");
   } 
-
+// Have to generate a password according to user criteria, if the user didn't select any of those criteria,then we have to alert them. 
+  if(!confirmNumber && !confirmSpecialCharacters && !confirmLowercase && !confirmUppercase) {
+    preferences = window.alert("You must choose a password criteria");
+  }
+// The user selected all the options
+  else if(confirmNumber && confirmSpecialCharacters && confirmLowercase && confirmUppercase) {
+    preferences = number.concat(specialCharacters,lowerCharacters,upperCharacters);
+  }
+// The user selected 3 options
+  else if(confirmSpecialCharacters && confirmUppercase && confirmLowercase) {
+    preferences = specialCharacters.concat(upperCharacters,lowerCharacters);
+  }
+  else if(confirmNumber && confirmSpecialCharacters && confirmLowercase) {
+    preferences = number.concat(specialCharacters,lowerCharacters);
+  }
+  else if(confirmNumber && confirmSpecialCharacters && confirmUppercase) {
+    preferences = number.concat(specialCharacters,upperCharacters);
+  }
+// The user selected only 2 options
+  else if(confirmNumber && confirmSpecialCharacters) {
+    preferences = number.concat(specialCharacters);
+  }
+  else if(confirmNumber && confirmLowercase) {
+    preferences = number.concat(lowerCharacters);
+  }
+  else if(confirmNumber && confirmUppercase) {
+    preferences = number.concat(upperCharacters);
+  }
+  else if(confirmSpecialCharacters && confirmUppercase) {
+    preferences = specialCharacters.concat(upperCharacters);
+  }
+  else if(confirmSpecialCharacters && confirmLowercase) {
+    preferences = specialCharacters.concat(lowerCharacters);
+  }
+  else if(confirmUppercase && confirmLowercase) {
+    preferences = upperCharacters.concat(lowerCharacters);
+  }
+// User selected only one option 
+  else if(confirmNumber) {
+    preferences = number;
+  }
+  else if(confirmSpecialCharacters) {
+    preferences = specialCharacters;
+  }
+  else if(confirmLowercase) {
+    preferences = lowerCharacters;
+  }
+  else if(confirmUppercase) {
+    preferences = upperCharacters;
+  }
 }
 
 // Get references to the #generate element
