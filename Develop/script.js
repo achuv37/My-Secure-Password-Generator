@@ -85,6 +85,16 @@ function generatePassword() {
   else if(confirmUppercase) {
     preferences = upperCharacters;
   }
+  // Declaring the variable password
+  var password = [];
+  // using for loop to generate the password according to user preferences.
+  for(var i = 0;i<passwordLength;i++) {
+  // selecting the password randomly depends on user preferences.
+    var selectPreferences = preferences[Math.floor(Math.random() * preferences.length)];
+    password.push(selectPreferences);
+  }
+  var selectedPassword = password.join("");
+  return selectedPassword;
 }
 
 // Get references to the #generate element
