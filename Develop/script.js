@@ -16,15 +16,18 @@ var specialCharacters = ["@","#","!","$","%","^","&","*","(",")","_","-","+","="
 var passwordLength ;
 var preferences;
 
-
-
-
-
-
-
-// Assignment code here
+// Function to generate password.
 function generatePassword() {
-  
+// Asking user to enter the length of the password.
+  passwordLength = window.prompt("How many characters would you like in your password? Choose between 8 and 128");
+// validating user input 
+  if(!passwordLength) {
+    window.alert("Please, enter a value");
+  }
+  else if(passwordLength < 8 || passwordLength > 128) {
+  // verifying user input.
+    passwordLength = window.prompt("You must enter a number between 8 and 128");
+  }
 }
 
 // Get references to the #generate element
