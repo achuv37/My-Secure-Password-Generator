@@ -1,5 +1,22 @@
-// Assignment code here
+// Pseudo code
+// 1. Use the window.prompt to get the password criteria from user.
+// 2. The user should enter the length of the password between 8 and 128.
+// 3. Get information from the user about password preferences like Numbers,
+//     Lowercase, Uppercase and Special characters.
+// 4. Verify the input.
+// 5. Generate password based on the criteria.
 
+
+
+
+
+
+
+
+// Assignment code here
+function generatePassword() {
+  
+}
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
