@@ -28,6 +28,14 @@ function generatePassword() {
   // verifying user input.
     passwordLength = window.prompt("You must enter a number between 8 and 128");
   }
+// checking the user entered correctly or not.
+  else {
+    var confirmNumber = window.confirm("Will this contain numbers?");
+    var confirmSpecialCharacters = window.confirm("Will this contain Special characters?");
+    var confirmLowercase = window.confirm("Will this contain Lowercase letters?");
+    var confirmUppercase = window.confirm("Will this contain Uppercase letters?");
+  } 
+
 }
 
 // Get references to the #generate element
