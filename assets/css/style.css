@@ -1,9 +1,11 @@
+/* Universal selector */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/* General styling */
 html,
 body,
 .wrapper {
@@ -23,6 +25,8 @@ body {
   padding-right: 20px;
 }
 
+
+/* Header-Styling: Password-generator Main-heading */
 header {
   text-align: center;
   padding: 20px;
@@ -30,6 +34,7 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+/* Styling Card Section */
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -50,10 +55,12 @@ header {
   height: 2px;
 }
 
+/*Password-Text-area */
 .card-body {
   min-height: 100px;
 }
 
+/* Styling: Card-footer section */
 .card-footer {
   text-align: center;
 }
@@ -72,6 +79,7 @@ header {
   clear: both;
 }
 
+/* Button Styling */
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -97,6 +105,7 @@ button[disabled] {
   float: right;
 }
 
+/* Password Text-area */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -118,6 +127,7 @@ button[disabled] {
   overflow: hidden;
 }
 
+/* Media-query Section */
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;

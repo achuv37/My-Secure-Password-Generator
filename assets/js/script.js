@@ -1,5 +1,5 @@
 // Pseudo code
-// 1. Use the window.prompt to get the password criteria from user.
+// 1. Use the window.prompt to get the password length from user.
 // 2. The user should enter the length of the password between 8 and 128.
 // 3. Get information from the user about password preferences like Numbers,
 //     Lowercase, Uppercase and Special characters.
@@ -39,11 +39,11 @@ function generatePassword() {
   if(!confirmNumber && !confirmSpecialCharacters && !confirmLowercase && !confirmUppercase) {
     preferences = window.alert("You must choose a password criteria");
   }
-// The user selected all the options
+// The user confirmed Number,Special-characters, Uppercase and Lowercase.
   else if(confirmNumber && confirmSpecialCharacters && confirmLowercase && confirmUppercase) {
     preferences = number.concat(specialCharacters,lowerCharacters,upperCharacters);
   }
-// The user selected 3 options
+// The user confirmed only 3 choices
   else if(confirmSpecialCharacters && confirmUppercase && confirmLowercase) {
     preferences = specialCharacters.concat(upperCharacters,lowerCharacters);
   }
@@ -53,7 +53,7 @@ function generatePassword() {
   else if(confirmNumber && confirmSpecialCharacters && confirmUppercase) {
     preferences = number.concat(specialCharacters,upperCharacters);
   }
-// The user selected only 2 options
+// The user confirmed  only 2 choices
   else if(confirmNumber && confirmSpecialCharacters) {
     preferences = number.concat(specialCharacters);
   }
@@ -72,7 +72,7 @@ function generatePassword() {
   else if(confirmUppercase && confirmLowercase) {
     preferences = upperCharacters.concat(lowerCharacters);
   }
-// User selected only one option 
+// User confirmed only  one choice
   else if(confirmNumber) {
     preferences = number;
   }
