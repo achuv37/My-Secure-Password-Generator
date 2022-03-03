@@ -19,3 +19,7 @@
 For loop is used to loop the blocks of code password.length times.
 * Array_push() function is used to insert each randomly selected onces to the password arrays. Finally,we get a password array.The join() method creates and returns a new string by concatenating all of the elements in an array.
 * When the user clicks generate password button, the password will create inside the text area.
+ ## Built With
+* HTML
+* CSS
+## Website
