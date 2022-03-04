@@ -12,8 +12,8 @@
 
    5. Generate password based on the criteria
 
-* window.prompt displays a dialogue with a message prompting the user to enter the length of the password. And the user should enter a number between 8 and 128. Validating and verifying user input using if/else statements. Confirming user input with window.confirm method. If the user didn't confirm any of the password generation criteria then giving them alert using window.alert method.
-* Once the user confirmed the password generating criteria,(Numbers, Special-characters, Uppercase-Letters, Lowercase-Letters) then generating it according to user preferences.
+* The Method "window.prompt" displays a dialogue with a message prompting the user to enter the length of the password. User can enter a number between 8 and 128. Validating and verifying user input using if/else statements. Confirming user input using "window.confirm" method. If the user didn't confirm any of the password generation criteria then giving them alert using "window.alert" method.
+* Once the user confirms the password generating criteria,(Numbers, Special-characters, Uppercase-Letters, Lowercase-Letters) then a password will be generated according to user preferences.
 * The concat() method is used to merge the arrays, according to user preferences.
 * The Math.random () method creates a number between 0 and 1. so it will randomly create a floating point number. The preference array contains user choices. So, Math.random() * preferences.length gives a number between 0 and (preferences.length - 1). This is a floating point number. Math.floor() Method returns the largest integer less than or equal to a given number. This way we will get a random number/special-character/uppercase letters/lowercase letters.
 For loop is used to loop the blocks of code password.length times.
