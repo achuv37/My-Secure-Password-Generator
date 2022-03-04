@@ -26,7 +26,10 @@ For loop is used to loop the blocks of code password.length times.
 ## Website
  https://achuv37.github.io/My-Secure-Password-Generator/
  
+## Images
+![Capture1](https://user-images.githubusercontent.com/93412486/156681040-2896984b-9d14-4a25-b775-5d23fb756d19.JPG)
+![Capture2](https://user-images.githubusercontent.com/93412486/156681042-ef191c59-4b75-451e-8609-7df526068955.JPG)
 ## Video 
-
 https://user-images.githubusercontent.com/93412486/156680806-3706e70f-54f3-43de-a162-cc10d46d5b5e.mov
-
+## Contributed by
+Aswathy
