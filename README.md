@@ -24,7 +24,7 @@ For loop is used to loop the blocks of code password.length times.
 * CSS
 * JavaScript
 ## Website
- https://achuv37.github.io/My-Secure-Password-Generator/
+https://achuv37.github.io/Secured-Random-Password-Generator/
  
 ## Images
 ![Capture1](https://user-images.githubusercontent.com/93412486/156681040-2896984b-9d14-4a25-b775-5d23fb756d19.JPG)
